@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Rodry</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav__lista">
+          <li><a class="nav__link" href="">Sobre mi</a></li>
+          <li><a class="nav__link" href="">Proyectos</a></li>
+          <li><a class="nav__link" href="">Contacto</a></li>
+          <li><button class="nav__modoOscuro"><img class="nav__icono-darkmode" src="/img/night-mode.png" alt="Activar/Desactivar modo oscuro"></button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="presentacion">
+        <div class="presentacion__contenidoPrincipal">
+          <img class="" src="" alt="" />
+          <h1 class="presentacion__titulo-texto">
+            Hola! Soy Rodry, estudiante de programación y técnico radiólogo.
+          </h1>
+        </div>
+        <div class="presentacion__contenedorIconos">
+          <a
+            class="presentacion__icono"
+            href="mailto:rodrymza@gmail.com"
+            aria-label="Enviar un correo electrónico"
+          >
+            <img
+              src="img/google.png"
+              alt="Enviar un correo"
+              class="presentacion__icono-img"
+            />Gmail
+          </a>
+
+          <a
+            class="presentacion__icono"
+            href="https://github.com/rodrymza"
+            target="_blank"
+            aria-label="Ir a mi perfil de GitHub"
+          >
+            <img
+              src="img/github.png"
+              alt="Ir a GitHub"
+              class="presentacion__icono-img"
+            />Github
+          </a>
+
+          <a
+            class="presentacion__icono"
+            href="https://linkedin.com/in/rodrymza"
+            target="_blank"
+            aria-label="Ir a mi perfil de LinkedIn"
+          >
+            <img
+              src="img/linkedin.png"
+              alt="Ir a LinkedIn"
+              class="presentacion__icono-img"
+            />LinkedIn
+          </a>
+        </div>
+      </section>
+
+      <section class="proyectos">
+        <div class="proyectos__contenedor">
+          <h2 class="proyectos__titulo">Proyectos</h2>
+
+          <p class="proyectos__subtitulo">
+            Algunos de mis proyectos que he realizado durante mi aprendizaje. Me
+            gusta poder aplicar lo que aprendo en desafíos prácticos
+          </p>
+
+          <div class="proyectos__listado">
+            <article class="proyecto-card">
+              <img class="proyecto-card__imagen" src="" alt="" />
+
+              <div class="proyecto-card__contenido">
+                <h3 class="proyecto-card__titulo">Tienda online</h3>
+                <p class="proyecto-card__descripcion">
+                  Simulacion de una pequeña tienda online con catálogo de
+                  productos. Maquetada con HTML y CSS, incluye diseño responsivo
+                  y secciones básicas de inicio, productos y carrito
+                </p>
+
+                <div class="proyecto-card__tecnologias">
+                  <span class="proyecto-card__tecnologia">HTML</span>
+                  <span class="proyecto-card__tecnologia">CSS</span>
+                  <span class="proyecto-card__tecnologia">JavaScript</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="tecnologias">
+        <div class="tecnologias__contenedor">
+          <h2 class="tecnologias__titulo">Tecnologías</h2>
+          <p class="tecnologias__subtitulo">
+            Estas son alguan de las tecnologías que uso y que estoy interesado
+            en aprender para desarrollar proyectos
+          </p>
+
+          <div class="tecnologias__listado">
+            <article class="tecnologia-card">
+              <h3 class="tecnologia-card__titulo">Backend</h3>
+              <div class="tecnologia-card__contenedor-iconos">
+                <span class="tecnologia-card__icono">Java</span>
+                <span class="tecnologia-card__icono">Python</span>
+                <span class="tecnologia-card__icono">MySQL</span>
+                <span class="tecnologia-card__icono">MongoDB</span>
+              </div>
+            </article>
+
+            <article class="tecnologia-card">
+              <h3 class="tecnologia-card__titulo">FrontEnd</h3>
+              <div class="tecnologia-card__contenedor-iconos">
+                <span class="tecnologia-card__icono">HTML</span>
+                <span class="tecnologia-card__icono">CSS</span>
+                <span class="tecnologia-card__icono">JavaScript</span>
+                <span class="tecnologia-card__icono">TypeScript</span>
+              </div>
+            </article>
+
+            <article class="tecnologia-card">
+              <h3 class="tecnologia-card__titulo">Herramientas/Otros</h3>
+              <div class="tecnologia-card__contenedor-iconos">
+                <span class="tecnologia-card__icono">Git</span>
+                <span class="tecnologia-card__icono">GitHub</span>
+                <span class="tecnologia-card__icono">PureBasic</span>
+              </div>
+            </article>
+
+            <article class="tecnologia-card">
+              <h3 class="tecnologia-card__titulo">Interés en...</h3>
+              <div class="tecnologia-card__contenedor-iconos">
+                <span class="tecnologia-card__icono">Spring Boot</span>
+                <span class="tecnologia-card__icono">React</span>
+                <span class="tecnologia-card__icono">Astro</span>
+                <span class="tecnologia-card__icono">Docker</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="sobreMi">
+        <h2 class="sobreMi__titulo">Sobre mi</h2>
+        <p class="sobreMi__texto">
+          Cuento con más de 10 años de experiencia como técnico radiólogo y
+          actualmente estudio programación.
+        </p>
+        <p class="sobreMi__texto">
+          Me interesa combinar mis conocimientos actuales con la tecnología y
+          seguir aprendiendo para aplicar mis ideas a proyectos reales.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer__texto">
+        &copy; Rodry Ramirez 2025 - Inspirado en el portfolio de MiduDev
+      </p>
+      <a class="footer__contacto" href="">Contacto</a>
+    </footer>
+  </body>
+</html>
