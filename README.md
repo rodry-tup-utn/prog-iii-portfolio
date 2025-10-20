@@ -24,7 +24,7 @@ Este proyecto es mi portfolio web personal, desarrollado con **HTML y CSS puros*
     * Tecnologías
     * Sobre Mí
 * **Enlaces Sociales:** Conexiones directas a GitHub, LinkedIn y email.
-* **Modo Oscuro:** (En desarrollo) Funcionalidad para cambiar el tema de la página.
+* **Modo Oscuro:** Funcionalidad para cambiar el tema de la página.
 
 ---
 
@@ -44,12 +44,12 @@ Este proyecto es mi portfolio web personal, desarrollado con **HTML y CSS puros*
 
 ## 🎓 Contexto Académico
 
-Este portfolio fue creado como proyecto final para la cátedra:
+Este portfolio fue creado como proyecto integrador para la cátedra:
 
 * **Universidad:** Universidad Tecnológica Nacional (UTN)
 * **Facultad:** Facultad Regional Mendoza (FRM)
 * **Materia:** Programación III
-* **Profesor:** Ing. Chiroli
+* **Profesor:** Chiroli Luciano
 
 ---
 
