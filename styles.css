@@ -17,6 +17,7 @@
     --color-texto-secundario: #555555;
     --color-acento: #57C785;
     --sombra-tarjeta: 4px 4px 6px rgb(26, 70, 44); 
+    --sombra-foto: 0px 0px 20px rgb(26, 70, 44);
 }
 body{
     font-family: 'Onest', sans-serif;
@@ -35,6 +36,8 @@ body.dark-mode {
     --color-texto-secundario: #b0b0b0; 
     --color-acento: #57C785;
     --sombra-tarjeta: 4px 4px 6px rgba(255, 255, 255, 0.281);
+    --sombra-foto: 0px 0px 20px rgba(255, 255, 255, 0.281);
+
 }
 
 h1, h2, h3{
@@ -98,6 +101,7 @@ p, figcaption {
     height: 150px;
     border-radius: 50%;
     margin-right: 2rem;
+    box-shadow: var(--sombra-foto);
 }
 
 
@@ -309,7 +313,7 @@ box-shadow: var(--sombra-tarjeta);
     color: var(--color-texto-secundario);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
     body{
         width: 90vw;
     }
