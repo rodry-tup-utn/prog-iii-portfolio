@@ -4,39 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio de Rodry</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav">
         <ul class="nav__lista">
-          <li><a class="nav__link" href="">Sobre mi</a></li>
-          <li><a class="nav__link" href="">Proyectos</a></li>
-          <li><a class="nav__link" href="">Contacto</a></li>
-          <li><button class="nav__modoOscuro"><img class="nav__icono-darkmode" src="/img/night-mode.png" alt="Activar/Desactivar modo oscuro"></button></li>
+          <li><a class="nav__link" href="#sobre-mi">Sobre mi</a></li>
+          <li><a class="nav__link" href="#proyectos">Proyectos</a></li>
+          <li><a class="nav__link" href="mailto:rodrymza@gmail.com">Contacto</a></li>
+          <li>
+            <button class="nav__modo-oscuro" id="boton-dark">
+              <img
+                class="nav__icono-darkmode"
+                src="/img/night-mode.png"
+                alt="Activar/Desactivar modo oscuro"
+              />
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="presentacion">
-        <div class="presentacion__contenidoPrincipal">
-          <img class="" src="" alt="" />
+        <div class="presentacion__contenido-principal">
+          <img
+            class="presentacion__foto"
+            src="/img/profile.jpg"
+            alt="Mi foto de perfil"
+          />
           <h1 class="presentacion__titulo-texto">
             Hola! Soy Rodry, estudiante de programación y técnico radiólogo.
           </h1>
         </div>
-        <div class="presentacion__contenedorIconos">
+        <div class="presentacion__contenedor-iconos">
           <a
             class="presentacion__icono"
             href="mailto:rodrymza@gmail.com"
             aria-label="Enviar un correo electrónico"
           >
+          <figure class="presentacion__figura">
             <img
               src="img/google.png"
               alt="Enviar un correo"
               class="presentacion__icono-img"
-            />Gmail
+            />
+            <figcaption class="presentacion__etiqueta">Gmail</figcaption>
+          </figure>
           </a>
 
           <a
@@ -45,11 +70,14 @@
             target="_blank"
             aria-label="Ir a mi perfil de GitHub"
           >
+            <figure class="presentacion__figura">
             <img
               src="img/github.png"
               alt="Ir a GitHub"
               class="presentacion__icono-img"
-            />Github
+            />
+            <figcaption class="presentacion__etiqueta">GitHub</figcaption>
+          </figure>
           </a>
 
           <a
@@ -58,16 +86,19 @@
             target="_blank"
             aria-label="Ir a mi perfil de LinkedIn"
           >
+            <figure class="presentacion__figura">
             <img
               src="img/linkedin.png"
               alt="Ir a LinkedIn"
               class="presentacion__icono-img"
-            />LinkedIn
+            />
+            <figcaption class="presentacion__etiqueta">LinkedIn</figcaption>
+          </figure>
           </a>
         </div>
       </section>
 
-      <section class="proyectos">
+      <section class="proyectos" id="proyectos">
         <div class="proyectos__contenedor">
           <h2 class="proyectos__titulo">Proyectos</h2>
 
@@ -78,20 +109,26 @@
 
           <div class="proyectos__listado">
             <article class="proyecto-card">
-              <img class="proyecto-card__imagen" src="" alt="" />
-
+              <h3 class="proyecto-card__titulo">Tienda online</h3>
               <div class="proyecto-card__contenido">
-                <h3 class="proyecto-card__titulo">Tienda online</h3>
-                <p class="proyecto-card__descripcion">
-                  Simulacion de una pequeña tienda online con catálogo de
-                  productos. Maquetada con HTML y CSS, incluye diseño responsivo
-                  y secciones básicas de inicio, productos y carrito
-                </p>
+                <img
+                  class="proyecto-card__imagen"
+                  src="/img/tienda.png"
+                  alt=""
+                />
+                <div class="proyecto-card__contenedor-interno">
+                  <p class="proyecto-card__descripcion">
+                    Simulacion de una pequeña tienda online con catálogo de
+                    productos. Maquetada con HTML y CSS, incluye diseño
+                    responsivo y secciones básicas de inicio, productos y
+                    carrito
+                  </p>
 
-                <div class="proyecto-card__tecnologias">
-                  <span class="proyecto-card__tecnologia">HTML</span>
-                  <span class="proyecto-card__tecnologia">CSS</span>
-                  <span class="proyecto-card__tecnologia">JavaScript</span>
+                  <div class="proyecto-card__tecnologias">
+                    <img class="proyecto-card__icono" src="/img/tecnologias/html.png" alt="HTML">
+                    <img class="proyecto-card__icono" src="/img/tecnologias/css.png" alt="HTML">
+                    <img class="proyecto-card__icono" src="/img/tecnologias/javascript.png" alt="HTML">
+                  </div>
                 </div>
               </div>
             </article>
@@ -100,74 +137,170 @@
       </section>
 
       <section class="tecnologias">
-        <div class="tecnologias__contenedor">
-          <h2 class="tecnologias__titulo">Tecnologías</h2>
-          <p class="tecnologias__subtitulo">
-            Estas son alguan de las tecnologías que uso y que estoy interesado
-            en aprender para desarrollar proyectos
-          </p>
+        <h2 class="tecnologias__titulo">Tecnologías</h2>
+        <p class="tecnologias__subtitulo">
+          Estas son alguan de las tecnologías que uso y que estoy interesado en
+          aprender para desarrollar proyectos
+        </p>
 
-          <div class="tecnologias__listado">
-            <article class="tecnologia-card">
-              <h3 class="tecnologia-card__titulo">Backend</h3>
-              <div class="tecnologia-card__contenedor-iconos">
-                <span class="tecnologia-card__icono">Java</span>
-                <span class="tecnologia-card__icono">Python</span>
-                <span class="tecnologia-card__icono">MySQL</span>
-                <span class="tecnologia-card__icono">MongoDB</span>
-              </div>
-            </article>
+        <div class="tecnologias__listado">
+          <article class="tecnologia-card">
+            <h3 class="tecnologia-card__titulo">Backend</h3>
+            <div class="tecnologia-card__contenedor-iconos">
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/tecnologias/java.png"
+                  alt="Java"
+                />
+                <figcaption>Java</figcaption>
+              </figure>
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/tecnologias/python.png"
+                  alt="Python"
+                />
+                <figcaption>Python</figcaption>
+              </figure>
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/tecnologias/mysql.png"
+                  alt="MySQL"
+                />
+                <figcaption>MySQL</figcaption>
+              </figure>
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/tecnologias/mongodb.png"
+                  alt="MongoDB"
+                />
+                <figcaption>MongoDB</figcaption>
+              </figure>
+            </div>
+          </article>
 
-            <article class="tecnologia-card">
-              <h3 class="tecnologia-card__titulo">FrontEnd</h3>
-              <div class="tecnologia-card__contenedor-iconos">
-                <span class="tecnologia-card__icono">HTML</span>
-                <span class="tecnologia-card__icono">CSS</span>
-                <span class="tecnologia-card__icono">JavaScript</span>
-                <span class="tecnologia-card__icono">TypeScript</span>
-              </div>
-            </article>
+          <article class="tecnologia-card">
+            <h3 class="tecnologia-card__titulo">FrontEnd</h3>
+            <div class="tecnologia-card__contenedor-iconos">
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/tecnologias/html.png"
+                  alt="HTML"
+                />
+                <figcaption>HTML</figcaption>
+              </figure>
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/tecnologias/css.png"
+                  alt="CSS"
+                />
+                <figcaption>CSS</figcaption>
+              </figure>
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/tecnologias/javascript.png"
+                  alt="JavaScript"
+                />
+                <figcaption>JavaScript</figcaption>
+              </figure>
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/tecnologias/typescript.png"
+                  alt="TypeScript"
+                />
+                <figcaption>TypeScript</figcaption>
+              </figure>
+            </div>
+          </article>
 
-            <article class="tecnologia-card">
-              <h3 class="tecnologia-card__titulo">Herramientas/Otros</h3>
-              <div class="tecnologia-card__contenedor-iconos">
-                <span class="tecnologia-card__icono">Git</span>
-                <span class="tecnologia-card__icono">GitHub</span>
-                <span class="tecnologia-card__icono">PureBasic</span>
-              </div>
-            </article>
+          <article class="tecnologia-card">
+            <h3 class="tecnologia-card__titulo">Herramientas/Otros</h3>
+            <div class="tecnologia-card__contenedor-iconos">
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/tecnologias/git.png"
+                  alt="Git"
+                />
+                <figcaption>Git</figcaption>
+              </figure>
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/github.png"
+                  alt="GitHub"
+                />
+                <figcaption>GitHub</figcaption>
+              </figure>
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/tecnologias/purebasic.png"
+                  alt="PureBasic"
+                />
+                <figcaption>PureBasic</figcaption>
+              </figure>
+            </div>
+          </article>
 
-            <article class="tecnologia-card">
-              <h3 class="tecnologia-card__titulo">Interés en...</h3>
-              <div class="tecnologia-card__contenedor-iconos">
-                <span class="tecnologia-card__icono">Spring Boot</span>
-                <span class="tecnologia-card__icono">React</span>
-                <span class="tecnologia-card__icono">Astro</span>
-                <span class="tecnologia-card__icono">Docker</span>
-              </div>
-            </article>
-          </div>
+          <article class="tecnologia-card">
+            <h3 class="tecnologia-card__titulo">Interés en...</h3>
+            <div class="tecnologia-card__contenedor-iconos">
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img//tecnologias/astro.png"
+                  alt="Astro"
+                />
+                <figcaption>Astro</figcaption>
+              </figure>
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/tecnologias/docker.png"
+                  alt="Docker"
+                />
+                <figcaption>Docker</figcaption>
+              </figure>
+              <figure class="tecnologia-card__icon-container">
+                <img
+                  class="tecnologia-card__icono"
+                  src="/img/tecnologias/react.png"
+                  alt="React"
+                />
+                <figcaption>React</figcaption>
+              </figure>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="sobreMi">
-        <h2 class="sobreMi__titulo">Sobre mi</h2>
-        <p class="sobreMi__texto">
+      <section class="sobre-mi" id="sobre-mi">
+        <h2 class="sobre-mi__titulo">Sobre mi</h2>
+        <p class="sobre-mi__texto">
           Cuento con más de 10 años de experiencia como técnico radiólogo y
           actualmente estudio programación.
         </p>
-        <p class="sobreMi__texto">
+        <p class="sobre-mi__texto">
           Me interesa combinar mis conocimientos actuales con la tecnología y
           seguir aprendiendo para aplicar mis ideas a proyectos reales.
         </p>
       </section>
     </main>
 
-    <footer>
+    <footer class="foooter">
       <p class="footer__texto">
         &copy; Rodry Ramirez 2025 - Inspirado en el portfolio de MiduDev
       </p>
       <a class="footer__contacto" href="">Contacto</a>
     </footer>
+    <script src="/index.js"></script>
   </body>
 </html>
