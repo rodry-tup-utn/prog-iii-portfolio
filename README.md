@@ -6,7 +6,13 @@ Este proyecto es mi portfolio web personal, desarrollado con **HTML y CSS puros*
 
 ---
 
-## 🚀 Tecnologías Utilizadas
+### Link para visualizar en Vercel
+
+[Link a mi Portfolio](https://prog-iii-portfolio.vercel.app/)
+
+---
+
+### 🚀 Tecnologías Utilizadas
 
 * **HTML5:** Utilizado para la estructura y el contenido semántico del sitio.
 * **CSS3:** Aplicado para todos los estilos, animaciones y diseño.
@@ -14,7 +20,7 @@ Este proyecto es mi portfolio web personal, desarrollado con **HTML y CSS puros*
 
 ---
 
-## ✨ Características Principales
+### ✨ Características Principales
 
 * **HTML Semántico:** Uso correcto de etiquetas como `<header>`, `<main>`, `<footer>`, `<section>` y `<article>` para mejorar la accesibilidad y el SEO.
 * **Estructura BEM:** El CSS está organizado siguiendo la convención BEM para evitar conflictos de especificidad.
@@ -28,7 +34,7 @@ Este proyecto es mi portfolio web personal, desarrollado con **HTML y CSS puros*
 
 ---
 
-## 🖥️ Cómo ver el proyecto
+### 🖥️ Cómo ver el proyecto
 
 1.  Clona este repositorio:
     ```bash
@@ -42,7 +48,7 @@ Este proyecto es mi portfolio web personal, desarrollado con **HTML y CSS puros*
 
 ---
 
-## 🎓 Contexto Académico
+### 🎓 Contexto Académico
 
 Este portfolio fue creado como proyecto integrador para la cátedra:
 
@@ -53,13 +59,13 @@ Este portfolio fue creado como proyecto integrador para la cátedra:
 
 ---
 
-## 👤 Autor
+### 👤 Autor
 
 * **Rodry Ramirez**
 * **GitHub:** [@rodrymza](https://github.com/rodrymza)
 
 ---
 
-## 📄 Agradecimientos
+### 📄 Agradecimientos
 
 * Inspirado en el diseño y la estructura del portfolio de [MiduDev](https://midu.dev/).
