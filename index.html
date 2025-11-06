@@ -22,10 +22,13 @@
         <ul class="nav__lista">
           <li><a class="nav__link" href="#sobre-mi">Sobre mi</a></li>
           <li><a class="nav__link" href="#proyectos">Proyectos</a></li>
-          <li><a class="nav__link" href="mailto:rodrymza@gmail.com">Contacto</a></li>
+          <li>
+            <a class="nav__link" href="mailto:rodrymza@gmail.com">Contacto</a>
+          </li>
           <li>
             <button class="nav__modo-oscuro" id="boton-dark">
               <img
+                id="icono-dark-mode"
                 class="nav__icono-darkmode"
                 src="/img/night-mode.png"
                 alt="Activar/Desactivar modo oscuro"
@@ -54,14 +57,14 @@
             href="mailto:rodrymza@gmail.com"
             aria-label="Enviar un correo electrónico"
           >
-          <figure class="presentacion__figura">
-            <img
-              src="img/google.png"
-              alt="Enviar un correo"
-              class="presentacion__icono-img"
-            />
-            <figcaption class="presentacion__etiqueta">Gmail</figcaption>
-          </figure>
+            <figure class="presentacion__figura">
+              <img
+                src="img/google.png"
+                alt="Enviar un correo"
+                class="presentacion__icono-img"
+              />
+              <figcaption class="presentacion__etiqueta">Gmail</figcaption>
+            </figure>
           </a>
 
           <a
@@ -71,13 +74,13 @@
             aria-label="Ir a mi perfil de GitHub"
           >
             <figure class="presentacion__figura">
-            <img
-              src="img/github.png"
-              alt="Ir a GitHub"
-              class="presentacion__icono-img"
-            />
-            <figcaption class="presentacion__etiqueta">GitHub</figcaption>
-          </figure>
+              <img
+                src="img/github.png"
+                alt="Ir a GitHub"
+                class="presentacion__icono-img"
+              />
+              <figcaption class="presentacion__etiqueta">GitHub</figcaption>
+            </figure>
           </a>
 
           <a
@@ -87,13 +90,13 @@
             aria-label="Ir a mi perfil de LinkedIn"
           >
             <figure class="presentacion__figura">
-            <img
-              src="img/linkedin.png"
-              alt="Ir a LinkedIn"
-              class="presentacion__icono-img"
-            />
-            <figcaption class="presentacion__etiqueta">LinkedIn</figcaption>
-          </figure>
+              <img
+                src="img/linkedin.png"
+                alt="Ir a LinkedIn"
+                class="presentacion__icono-img"
+              />
+              <figcaption class="presentacion__etiqueta">LinkedIn</figcaption>
+            </figure>
           </a>
         </div>
       </section>
@@ -109,7 +112,20 @@
 
           <div class="proyectos__listado">
             <article class="proyecto-card">
-              <h3 class="proyecto-card__titulo">Tienda online</h3>
+              <h3 class="proyecto-card__titulo">
+                <a
+                  href="https://github.com/Coders-UTN/ecommerce-moda"
+                  target="_blank"
+                >
+                  <figure class="proyecto-card__link">
+                    <img
+                      class="proyecto-link__imagen"
+                      src="/img/github.png"
+                      alt="Link a proyecto"
+                    />
+                  </figure> </a
+                >Tienda online
+              </h3>
               <div class="proyecto-card__contenido">
                 <img
                   class="proyecto-card__imagen"
@@ -125,9 +141,72 @@
                   </p>
 
                   <div class="proyecto-card__tecnologias">
-                    <img class="proyecto-card__icono" src="/img/tecnologias/html.png" alt="HTML">
-                    <img class="proyecto-card__icono" src="/img/tecnologias/css.png" alt="HTML">
-                    <img class="proyecto-card__icono" src="/img/tecnologias/javascript.png" alt="HTML">
+                    <img
+                      class="proyecto-card__icono"
+                      src="/img/tecnologias/html.png"
+                      alt="HTML"
+                    />
+                    <img
+                      class="proyecto-card__icono"
+                      src="/img/tecnologias/css.png"
+                      alt="HTML"
+                    />
+                    <img
+                      class="proyecto-card__icono"
+                      src="/img/tecnologias/javascript.png"
+                      alt="HTML"
+                    />
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="proyecto-card">
+              <h3 class="proyecto-card__titulo">
+                <a
+                  href="https://github.com/Coders-UTN/integrador-bd2"
+                  target="_blank"
+                >
+                  <figure class="proyecto-card__link">
+                    <img
+                      class="proyecto-link__imagen"
+                      src="/img/github.png"
+                      alt="Link a proyecto"
+                    />
+                  </figure> </a
+                >API Rest con Node Express y Mongoose
+              </h3>
+              <div class="proyecto-card__contenido">
+                <img
+                  class="proyecto-card__imagen"
+                  src="/img/api-rest.png"
+                  alt=""
+                />
+                <div class="proyecto-card__contenedor-interno">
+                  <p class="proyecto-card__descripcion">
+                    Desarrollo de una API REST para la gestión de un E-commerce.
+                    Construida con Node.js y Express, utiliza MongoDB y Mongoose
+                    para la persistencia de datos. Incluye un sistema completo
+                    de autenticación y autorización con JWT para proteger rutas
+                    y gestionar roles (admin/cliente).
+                  </p>
+
+                  <div class="proyecto-card__tecnologias">
+                    <img
+                      class="proyecto-card__icono"
+                      src="/img/tecnologias/mongodb.png"
+                      alt="HTML"
+                    />
+                    <img
+                      class="proyecto-card__icono"
+                      src="/img/tecnologias/docker.png"
+                      alt="HTML"
+                    />
+                    <img
+                      class="proyecto-card__icono"
+                      src="/img/tecnologias/javascript.png"
+                      alt="HTML"
+                    />
                   </div>
                 </div>
               </div>
@@ -299,7 +378,7 @@
       <p class="footer__texto">
         &copy; Rodry Ramirez 2025 - Inspirado en el portfolio de MiduDev
       </p>
-      <a class="footer__contacto" href="">Contacto</a>
+      <a class="footer__contacto" href="mailto:rodrymza@gmail.com">Contacto</a>
     </footer>
     <script src="/index.js"></script>
   </body>
