@@ -258,7 +258,7 @@ figcaption {
   justify-items: center;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 20px;
   padding: 0 8rem;
 }
 
@@ -365,11 +365,8 @@ figcaption {
 
   .presentacion__contenedor-iconos {
     flex-direction: column;
-    width: 30%;
+    width: 50%;
     gap: 0.5rem;
-  }
-  .presentacion__etiqueta {
-    display: none;
   }
 
   .proyecto-card {
@@ -383,6 +380,7 @@ figcaption {
   .tecnologias__listado {
     grid-template-columns: 1fr;
     width: 100%;
+    padding: 0rem 3rem;
   }
   .tecnologia-card {
     width: 100%;
@@ -395,5 +393,8 @@ figcaption {
     align-items: center;
     width: 90vw;
     gap: 1rem;
+  }
+  .proyecto-card__titulo{
+    padding: 0 2rem;
   }
 }
