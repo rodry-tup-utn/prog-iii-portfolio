@@ -90,6 +90,9 @@ figcaption {
   color: var(--color-texto-principal);
   font-size: 0.9rem;
 }
+.nav__link:hover{
+  color: blue;
+}
 
 .nav__icono-darkmode {
   height: 30px;
